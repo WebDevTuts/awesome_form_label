@@ -1,0 +1,28 @@
+body {
+  padding: 100px;
+  -webkit-font-smoothing: antialiased;
+}
+
+input {
+  background: none;
+  border: 2px solid #21A1E1;
+  color: #21A1E1;
+  padding: 15px 40px;
+  font-size: 18px;
+}
+
+input:focus, 
+input:active {
+  outline: none;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: none;
+  border-bottom: 2px solid #21A1E1;
+}
+
+input[type="submit"]:active {
+  color: white;
+  background: #21A1E1;
+}
