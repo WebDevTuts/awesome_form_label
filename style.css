@@ -51,7 +51,8 @@ input[type="submit"]:active {
   transition: all .3s ease-in-out;
 }
 
-.input-group input:focus + label {
+.input-group input:focus + label,
+.input-group input.has-value + label {
   top: -10px;
   font-size: 12px;
   color: #AAA;
