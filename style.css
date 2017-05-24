@@ -9,6 +9,7 @@ input {
   color: #21A1E1;
   padding: 15px 40px;
   font-size: 18px;
+  display: inline-block;
 }
 
 input:focus, 
@@ -25,4 +26,33 @@ input[type="email"] {
 input[type="submit"]:active {
   color: white;
   background: #21A1E1;
+}
+
+.input-group {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+.input-group input {
+  padding: 15px 0px;
+}
+
+.input-group label {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 18px;
+  color: #999;
+  pointer-events: none;
+  transition: all .3s ease-in-out;
+}
+
+.input-group input:focus + label {
+  top: -10px;
+  font-size: 12px;
+  color: #AAA;
 }
